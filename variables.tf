@@ -4,20 +4,20 @@ variable "pm_api_url" {
   description = "The node to which it should connect"
 }
 
-variable vm_name {
-    type = string
-    default = "Alma_machine"
-    description = "Unique name of the machine to be created"
+variable "vm_name" {
+  type        = string
+  default     = "Alma_machine"
+  description = "Unique name of the machine to be created"
 }
 
-variable pve_node {
+variable "pve_node" {
   type        = string
   default     = "bre-pve-07"
   description = "Target node where the machine should be deployed"
 }
 
-variable vm_id {
+variable "vm_id" {
   type        = string
-  default     = "450"
+  default     = "0"
   description = "VMID of the machine to be created - 0 for next available"
 }
