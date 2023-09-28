@@ -33,7 +33,6 @@ resource "proxmox_vm_qemu" "alma_machine" {
   ciuser     = "root"
   cipassword = "Pa55w0rd"
   os_type    = "cloud-init"
-  ciupgrade  = true
   ipconfig0  = "ip=10.6.1.150/24,gw=10.6.1.1"
   searchdomain = "god.de"
   nameserver   = "10.6.0.10"
