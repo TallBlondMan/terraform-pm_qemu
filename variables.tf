@@ -5,9 +5,10 @@ variable "pm_api_url" {
 }
 
 variable "vm_name" {
-  type        = string
-  default     = "Alma_machine"
-  description = "Unique name of the machine to be created"
+  type = string
+  # Name cannot contain underscore 
+  default     = "alma-machine-test"
+  description = "Unique name of the machine !! Cannot be with underscore !!"
 }
 
 variable "pve_node" {
